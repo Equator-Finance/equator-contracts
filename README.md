@@ -21,7 +21,7 @@
 
 ---
 
-## 🏗 Repository-Specific Smart Contract Architecture
+## 🏗 Smart Contract Architecture
 
 The on-chain contracts are architected using modular Rust crates compiled to WebAssembly target `wasm32-unknown-unknown`.
 
