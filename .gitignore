@@ -1,0 +1,12 @@
+# Rust / Cargo build artifacts
+/target
+Cargo.lock
+
+# WASM output
+*.wasm
+
+# OS & Editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp
