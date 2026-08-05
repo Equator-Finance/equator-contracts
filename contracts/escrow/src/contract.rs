@@ -23,8 +23,8 @@ impl EquatorEscrowContract {
 
         let forward = ForwardContract {
             contract_id,
-            importer,
-            market_maker: Address::generate(&env), // Placeholder until match
+            importer: importer.clone(),
+            market_maker: importer, // Placeholder until matched by desk
             currency_pair,
             notional_usd,
             strike_rate,
