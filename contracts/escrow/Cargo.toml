@@ -6,5 +6,15 @@ edition = "2021"
 [lib]
 crate-type = ["cdylib"]
 
+[lints.rust]
+unexpected_cfgs = { level = "allow", check-cfg = ['cfg(feature, values("testutils"))'] }
+
 [dependencies]
-soroban-sdk = "20.0.0"
+soroban-sdk = "20.5.0"
+
+[dev-dependencies]
+soroban-sdk = { version = "20.5.0", features = ["testutils"] }
+
+[features]
+testutils = ["soroban-sdk/testutils"]
+
